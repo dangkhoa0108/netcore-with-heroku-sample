@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  sample-database:
+    image: ${DOCKER_REGISTRY-}sampledatabase
+    build:
+      context: .
+      dockerfile: sample-database/Dockerfile
